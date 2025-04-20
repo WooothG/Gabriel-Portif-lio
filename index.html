@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Oliveira - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel= "icon" hrelf="https://i.pinimg.com/474x/61/82/95/6182954528bdd2d1f65e400b81f9d9d6.jpg" type="image/jpg">
+</head>
+
+<body>
+
+  <header class="header" style="background-image: url('https://i.pinimg.com/originals/36/56/1a/36561ac2de9a4fdf22be032a3accead9.gif');">
+    <div class="container">
+      <div class="profile">
+      <a hrelf="https://woothzin.github.io/Wooth-e-seu-significado-/" target= "_blank">
+        <img src="https://i.pinimg.com/736x/52/46/87/52468782072ba2b0b1a15a0f606a6570.jpg" alt="Gabriel Oliveira" class="profile-img">
+        </a>
+        <h1 style="font-size: 36px;">Olá, Sou  <span class="neon-middle">Gabriel </span>Oliveira</h1>
+        <p>Desenhista / Leitor / Gamer / Programador</p>
+        
+        </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <h2 id= "biografia">Biografia</h2>
+    <p>Meu nome é Gabriel Oliveira Araújo, tenho 17 anos e atualmente moro em Lagoa Grande, Minas Gerais. Estudo na Escola Santa Terezinha desde o primeiro ano do ensino médio, e hoje estou no último ano, conciliando meus estudos com o segundo e último ano de um curso técnico na área de Tecnologia da Informação.
+
+Desde a infância, sempre fui fascinado por tecnologia. Tive meu primeiro contato com computadores aos quatro anos de idade, o que despertou um interesse genuíno por tudo que envolve o universo digital. Com o tempo, essa curiosidade evoluiu para um desejo de entender como as coisas funcionam por trás das telas — e foi assim que descobri minha paixão por programação. A ideia de poder criar sistemas, soluções e experiências digitais com as próprias mãos sempre me pareceu algo mágico, e é isso que me motiva a aprender cada vez mais.
+
+Atualmente, estou focado no aprendizado de lógica de programação, com ênfase em JavaScript. Também venho estudando HTML, CSS, fundamentos de desenvolvimento web, banco de dados com SQL e noções de manutenção de computadores. Apesar de ainda estar em processo de aprendizagem, sou determinado, autodidata e dedicado a construir uma base sólida para seguir carreira na área.
+
+Tenho conhecimento básico em inglês, com capacidade de leitura e compreensão de materiais técnicos, e busco constantemente evoluir também nesse aspecto para ampliar minhas oportunidades.
+
+No momento, estou participando de um projeto prático em meu curso, voltado para o desenvolvimento de um sistema de achados e perdidos, o que tem me proporcionado uma experiência real de trabalho em equipe, lógica aplicada e organização de ideias.
+</p>
+  </section>
+
+  <section class="content">
+    <div class="bloco-topico gif-esquerda">
+      <img src="https://cdn.dribbble.com/userupload/29099078/file/original-9b96099958bfadcee9bdb1090717990f.gif" alt="Gif de hobbies" class="gif-bloco">
+      <div class="texto">
+        <h2 id="hobbies">Hobbies</h2>
+        <p>Além da tecnologia, sou apaixonado por arte e cultura. Gosto de desenhar, especialmente no estilo de animes e mangás, além de explorar outros traços e estilos artísticos. Também gosto de ler livros e mangás, atividades que me ajudam a expandir a criatividade e desenvolver uma visão mais sensível sobre o mundo. Sou apaixonado por tecnologia, arte e cultura, buscando sempre integrar esses mundos em meus projetos e na minha vida. 
+
+Nas horas vagas, pratico violão — ainda estou aprendendo, mas a música tem um papel importante no meu equilíbrio emocional e criatividade.
+</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="content">
+  <h2 id= "skill">Habilidades</h2>.
+  <style>
+    @keyframes circle-in-hesitate {
+      0% {
+        clip-path: circle(0%);
+      }
+      40% {
+        clip-path: circle(40%);
+      }
+      100% {
+        clip-path: circle(125%);
+      }
+    }
+
+    .circle-transition {
+      animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+    }
+  </style>
+
+  <img src="https://i.pinimg.com/474x/fb/1e/7f/fb1e7f9db2540c3194a9179094a925e2.jpg" 
+       alt="HTML" 
+       class="skill-icon" 
+       id="img-html">
+
+  <img src="https://i.pinimg.com/474x/fa/ae/11/faae11a6b87547339411b40ac228d4d7.jpg" 
+       alt="CSS" 
+       class="skill-icon" 
+       id="img-css">
+
+  <img src="https://i.pinimg.com/736x/b6/ab/52/b6ab52333dd3effe49adf85e8179155a.jpg" 
+       alt="JavaScript" 
+       class="skill-icon" 
+       id="img-js">
+
+  <script>
+    const hoverImage = "https://i.pinimg.com/474x/39/17/81/391781fff2a405925f9422c4cd97eb44.jpg";
+
+    const imagens = [
+      document.getElementById('img-html'),
+      document.getElementById('img-css'),
+      document.getElementById('img-js')
+    ];
+
+    imagens.forEach(img => {
+      const originalSrc = img.src;
+
+      img.addEventListener("mouseover", () => {
+        img.classList.add("circle-transition");
+        img.src = hoverImage;
+      });
+
+      img.addEventListener("mouseout", () => {
+        img.src = originalSrc;
+        img.classList.remove("circle-transition");
+      });
+    });
+  
+
+
+
+  function calcular() {
+    let resultado = document.getElementById("display").value;
+
+    if (resultado === "124") {
+      window.location.href = "https://woothzin.github.io/Wooth-e-seu-significado-/";
+    } else {
+      try {
+        document.getElementById("display").value = eval(resultado);
+      } catch {
+        document.getElementById("display").value = "Erro";
+      }
+    }
+  }
+</script>
+
+  
+
+   
+
+  </section>
+  
+   <section class="content">
+   <h2 id= "calculadora">Projeto Calculadora</h2>
+    <div class="back">
+        <div class="calc"><br/>
+            <p id="resultado"></p>
+        <table>
+            <tr>
+                <td><button class="btn" onClick="limpar()">C</button></td>
+                <td><button class="btn" onClick="apagar()">D</button></td>
+                <td><button class="btn" onClick="insert('/')">/</button></td>
+                <td><button class="btn" onClick="insert('')"></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onClick="insert('7')">7</button></td>
+                <td><button class="btn" onClick="insert('8')">8</button></td>
+                <td><button class="btn" onClick="insert('9')">9</button></td>
+                <td><button class="btn" onClick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onClick="insert('4')">4</button></td>
+                <td><button class="btn" onClick="insert('5')">5</button></td>
+                <td><button class="btn" onClick="insert('6')">6</button></td>
+                <td><button class="btn" onClick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onClick="insert('1')">1</button></td>
+                <td><button class="btn" onClick="insert('2')">2</button></td>
+                <td><button class="btn" onClick="insert('3')">3</button></td>
+                <td rowspan="2"><button class="btn" style="height: 100px" id="btn2" onClick="calcular()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="btn" style="width: 100px" onClick="insert('0')">0</button></td>
+                <td><button class="btn" onClick="insert('.')">.</button></td>
+            </tr>
+        </table>
+        </div>    
+    </div>
+    <script>
+    var estado =0;
+	function insert(numero)
+		{
+			if(estado>0)
+				{
+					limpar();
+					estado=0;
+				}
+			var num = document.getElementById('resultado').innerHTML;
+			document.getElementById('resultado').innerHTML = num + numero;
+		
+		}
+	function limpar(){
+		document.getElementById('resultado').innerHTML="";
+	}
+		
+	function apagar(){
+		var resultado= document.getElementById('resultado').innerHTML;
+		document.getElementById('resultado').innerHTML = resultado.substring(0,resultado.length -1);
+		
+	}
+		
+	function calcular(){
+		var resultado = document.getElementById('resultado').innerHTML;
+		if(resultado){
+			if(estado<1){
+				document.getElementById('resultado').innerHTML=eval(resultado);
+				estado = 1;
+				
+					}
+			
+		}
+	}
+
+    
+    </script>
+
+   
+   </section>
+   
+
+<!-- Botão hambúrguer -->
+<div class="hamburger" onclick="document.getElementById('menuFullscreen').style.display='flex'">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+  
+  <!-- Botão do menu -->
+<div class="hamburger" onclick="abrirMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!-- Menu hambúrguer -->
+<div class="menu-fullscreen" id="menu">
+  <span class="close-btn" onclick="fecharMenu()">×</span>
+  <a href="#" onclick="fecharMenu()">Início</a>
+  <a href="#biografia" onclick="fecharMenu()">Biografia</a>
+  <a href="#hobbies" onclick="fecharMenu()">Hobies</a>
+  <a href="#skill" onclick="fecharMenu()">Habilidades</a>
+  <a href="#calculadora" onclick="fecharMenu()">Projeto Calculadora</a>
+</div>
+
+<!-- Script para abrir/fechar menu -->
+<script>
+  function abrirMenu() {
+    document.getElementById('menu').style.display = 'flex';
+  }
+
+  function fecharMenu() {
+    document.getElementById('menu').style.display = 'none';
+  }
+</script>
+
+
+   
+ 
+ 
+   
+   <footer class = "footer">
+
+ <h2 id= "links">Plataformas de Contato</h2>
+ <div class="footer-content">
+
+     <a href="https://github.com/WooothG" target="_blank">
+    <img src="https://i.pinimg.com/474x/64/88/0b/64880b9b0fe5b53bbe3f7280d262b33f.jpg" alt="GitHub">
+  </a>
+  
+  <a href="https://www.instagram.com/son_biel_?igsh=MWk0NWJyMm0xYmw2ZQ==" target="_blank">
+    <img src="https://i.pinimg.com/474x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Instagram">
+  </a> 
+  
+  <a href="https://t.me/son_biel17" target="_blank">
+    <img src="https://i.pinimg.com/474x/57/13/84/5713846d630704ce892f9c93944ba451.jpg" alt="Telegram">
+    </a>
+    
+    
+    
+    <div class = "moon">
+    
+    
+    <a href="https://woothzin.github.io/Wooth-e-seu-significado-/" target="_blank">
+    <img src="https://i.pinimg.com/474x/9d/4b/ff/9d4bff24d7956a930c996c2b6258b5d1.jpg" alt="Telegram">
+    </a>
+    </div>
+    
+    
+    
+    </div>
+   
+    <p2>© 2025 Gabriel Oliveira. Todos os direitos reservados.</p2>
+  
+    
+    
+  </footer>
+
+
+</body>
+</html>
