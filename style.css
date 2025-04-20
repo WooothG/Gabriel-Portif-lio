@@ -1,0 +1,322 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0e1012;
+    color: #000000;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile {
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-img {
+    display: flex;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #040c0c;
+    box-shadow: 0 0 15px 5px rgba(116, 231, 248, 0.8); /* Efeito neon com a cor #74e7f8 */
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #121b1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.content + .content {
+    margin-top: 60px;
+}
+
+h2 {
+    color:#2e9aa3;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.social-links a {
+    color: #3d3fbb;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+  background-image: url('https://i.pinimg.com/originals/36/56/1a/36561ac2de9a4fdf22be032a3accead9.gif'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+footer p {
+    z-index: 2;
+    margin: 0;
+}
+
+/* Animação para as ondas */
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Estilizando o elemento h1 */
+h1 {
+    font-family: monospace;
+    text-shadow:
+        0 0 10px rgba(63, 161, 183, 0.8), 
+        0 0 20px rgba(63, 161, 183, 0.8);
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    border-right: 4px solid white;
+    animation: animaTexto steps(25) 2s forwards, animaMarcador 2s steps(25) 1 forwards;
+}
+
+span.neon-middle {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 
+                 0 0 20px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+@keyframes animaTexto {
+    from {
+        width: 0;
+    }
+    to {
+        width: 25ch;
+    }
+}
+
+@keyframes animaMarcador {
+    0% {
+        border-right-color: white;
+    }
+    100% {
+        border-right-color: transparent;
+    }
+}
+
+.bloco-topico {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.bloco-topico .gif-bloco {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bloco-topico .texto {
+    flex: 1;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: inherit;
+}
+p {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.6;
+  text-align: justify; /* alinha retinho nas margens */
+  padding: 0 20px; /* espaçamento lateral */
+}
+
+
+ 
+ .footer-content a img {
+   display: inline-block;
+   justify-content: center;
+   flex-direction: row;
+   align-items: center;
+   width: auto ;
+   height: 25px; 
+   border: 2px solid #fff;
+   border-radius: 15%;
+   margin: 10px;
+ }
+ 
+  #links {
+    color: #000000;
+  font-family: FreeMono, monospace;
+  text-shadow:
+        0 0 10px rgba(63, 161, 183, 0.8), 
+        0 0 20px rgba(63, 161, 183, 0.8);
+}
+
+#projetos {
+  text-align: center;
+  
+}
+
+
+.btn {
+  background: white;
+  border-radius: 13px;
+  text-shadow: 1px 1px 3px #000000;
+  font-family: Arial;
+  color: black; /* corrigido */
+  font-size: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.calc {
+  /* CENTRALIZAÇÃO DENTRO DE UM CONTAINER */
+  margin: 20px auto;
+  width: fit-content;
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 2px solid #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#resultado {
+  background-color: #000000;
+  width: 207px;
+  height: 45px;
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+#btn2{
+  background-color: #fb3f9a ;
+}
+#skill {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.skill-icon {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  gap: 25px;
+  
+}
+
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  .menu-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e9aa3;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .menu-fullscreen a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 20px 0;
+    font-family: sans-serif;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  
+
+
+.moon {
+border: 1px black;
+display: flex;
+justify-content: flex-end;
+border-radius: 5px;
+
+} 
