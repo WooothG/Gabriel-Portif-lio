@@ -180,29 +180,24 @@ imagens.forEach((img) => {
 		document.getElementById('resultado').innerHTML = resultado.substring(0,resultado.length -1);
 		
 	}
-		
-	function calcular(){
-		var resultado = document.getElementById('resultado').innerHTML;
-		if(resultado){
-			if(estado<1){
-				document.getElementById('resultado').innerHTML=eval(resultado);
-				estado = 1;
-				
-					}
-			
-		}
-	}
-	    function calcular() {
+		function calcular() {
   var resultado = document.getElementById('resultado').innerHTML;
   if (resultado) {
     var calculo = eval(resultado);
-    
+
     if (calculo === 124) {
       window.location.href = "https://woothzin.github.io/Wooth-e-seu-significado-/";
     } else {
       document.getElementById('resultado').innerHTML = calculo;
       estado = 1;
     }
+  }
+}
+
+			
+		}
+	}
+	    
   }
 }
 
