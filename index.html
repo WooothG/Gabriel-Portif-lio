@@ -88,33 +88,40 @@ Nas horas vagas, pratico violão — ainda estou aprendendo, mas a música tem u
        class="skill-icon" 
        id="img-js">
 </a>
+<script>
+  const imagens = [
+  document.getElementById('img-html'),
+  document.getElementById('img-css'),
+  document.getElementById('img-js')
+];
 
-  <script>
-    const hoverImage = "https://i.pinimg.com/474x/39/17/81/391781fff2a405925f9422c4cd97eb44.jpg";
+const hoverImage = "https://i.pinimg.com/474x/39/17/81/391781fff2a405925f9422c4cd97eb44.jpg";
 
-    const imagens = [
-      document.getElementById('img-html'),
-      document.getElementById('img-css'),
-      document.getElementById('img-js')
-    ];
+imagens.forEach((img) => {
+  const originalSrc = img.src;
 
-    imagens.forEach(img => {
-      const originalSrc = img.src;
+  
+  img.style.transition = "transform 0.3s ease-in-out, filter 0.3s ease-in-out";
 
-      img.addEventListener("mouseover", () => {
-        img.classList.add("circle-transition");
-        img.src = hoverImage;
-      });
+  img.addEventListener("mouseover", () => {
+    if (img.src !== hoverImage) {
+      img.src = hoverImage;
+      img.style.transform = "scale(1.1)";
+      img.style.filter = "brightness(1.2)";
+    }
+  });
 
-      img.addEventListener("mouseout", () => {
-        img.src = originalSrc;
-        img.classList.remove("circle-transition");
-      });
-    });
+  img.addEventListener("mouseout", () => {
+    img.src = originalSrc;
+    img.style.transform = "scale(1)";
+    img.style.filter = "brightness(1)";
+  });
+});
+  </script>
   
 
 
-
+<script>
   function calcular() {
     let resultado = document.getElementById("display").value;
 
