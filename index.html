@@ -122,19 +122,19 @@ imagens.forEach((img) => {
 
 
 <script>
-  function calcular() {
-    let resultado = document.getElementById("resultado").value;
-
-    if (resultado === "124") {
+  function calcular(){
+  var resultado = document.getElementById('resultado').innerHTML;
+  if(resultado){
+    var calculo = eval(resultado);
+    if (calculo === 124) {
       window.location.href = "https://woothzin.github.io/Wooth-e-seu-significado-/";
     } else {
-      try {
-        document.getElementById("display").value = eval(resultado);
-      } catch {
-        document.getElementById("display").value = "Erro";
-      }
+      document.getElementById('resultado').innerHTML = calculo;
+      estado = 1;
     }
   }
+}
+
 </script>
 
   
