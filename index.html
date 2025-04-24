@@ -14,7 +14,7 @@
   <header class="header" style="background-image: url('https://i.pinimg.com/originals/36/56/1a/36561ac2de9a4fdf22be032a3accead9.gif');">
     <div class="container">
       <div class="profile">
-      <a hrelf="https://woothzin.github.io/Wooth-e-seu-significado-/" target= "_blank">
+      <a href="https://woothzin.github.io/Wooth-e-seu-significado-/" target= "_blank">
         <img src="https://i.pinimg.com/736x/52/46/87/52468782072ba2b0b1a15a0f606a6570.jpg" alt="Gabriel Oliveira" class="profile-img">
         </a>
         <h1 style="font-size: 36px;">Olá, Sou  <span class="neon-middle">Gabriel </span>Oliveira</h1>
@@ -52,7 +52,7 @@ Nas horas vagas, pratico violão — ainda estou aprendendo, mas a música tem u
   </section>
   
   <section class="content">
-  <h2 id= "skill">Habilidades</h2>.
+  <h2 id= "skill">Habilidades</h2>
   <style>
     @keyframes circle-in-hesitate {
       0% {
@@ -131,7 +131,7 @@ imagens.forEach((img) => {
                 <td><button class="btn" onClick="limpar()">C</button></td>
                 <td><button class="btn" onClick="apagar()">D</button></td>
                 <td><button class="btn" onClick="insert('/')">/</button></td>
-                <td><button class="btn" onClick="insert('')"></button></td>
+                <td><button class="btn" onClick="insert('*')">*</button></td>
             </tr>
             <tr>
                 <td><button class="btn" onClick="insert('7')">7</button></td>
@@ -209,22 +209,14 @@ imagens.forEach((img) => {
    </section>
    
 
-<!-- Botão hambúrguer -->
-<div class="hamburger" onclick="document.getElementById('menuFullscreen').style.display='flex'">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-
   
-  <!-- Botão do menu -->
 <div class="hamburger" onclick="abrirMenu()">
   <div></div>
   <div></div>
   <div></div>
 </div>
 
-<!-- Menu hambúrguer -->
+
 <div class="menu-fullscreen" id="menu">
   <span class="close-btn" onclick="fecharMenu()">×</span>
   <a href="#" onclick="fecharMenu()">Início</a>
@@ -234,7 +226,7 @@ imagens.forEach((img) => {
   <a href="#calculadora" onclick="fecharMenu()">Projeto Calculadora</a>
 </div>
 
-<!-- Script para abrir/fechar menu -->
+
 <script>
   function abrirMenu() {
     document.getElementById('menu').style.display = 'flex';
@@ -281,7 +273,7 @@ imagens.forEach((img) => {
     
     </div>
    
-    <p2>© 2025 Gabriel Oliveira. Todos os direitos reservados.</p2>
+    <p id="p2">© 2025 Gabriel Oliveira. Todos os direitos reservados.</p>
   
     
     
