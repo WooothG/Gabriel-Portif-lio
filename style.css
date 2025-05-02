@@ -39,7 +39,7 @@ body {
     border-radius: 8px;
     color: #fff;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden;   
 }
 
 .content + .content {
@@ -244,7 +244,10 @@ p {
   text-align: center;
 }
 .skill-icon {
-  margin: 5px;
+  border: solid 5px #2e9aa3;
+  margin: 1px;
+  border-radius: 20px 0 20px 0;
+  margin: 15px;
   width: 200px;
   height: 200px;
   gap: 25px;
@@ -318,4 +321,3 @@ border-radius: 5px;
 #p2 {
     text-align: center;
 }
-
